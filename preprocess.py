@@ -143,5 +143,5 @@ def preprocess_squad(file_name, output_name, skip_answer=False):
 if __name__ == '__main__':
     #preprocess_ch('CQA_data/train-v1.1.json', 'train.json')
     #preprocess_ch('CQA_data/test-v1.1.json', 'test.json', True)
-    preprocess_squad('Fusion/squad/train-v1.1.json', 'train_squad.json')
-    preprocess_squad('Fusion/squad/dev-v1.1.json', 'dev_squad.json')
+    preprocess_squad('FusionNet/squad/train-v1.1.json', 'train_squad.json')
+    preprocess_squad('FusionNet/squad/dev-v1.1.json', 'dev_squad.json')
