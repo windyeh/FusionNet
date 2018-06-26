@@ -1,4 +1,5 @@
 # FusionNet
+### I forked this git from exe1023, and try to modify for running on Google colab environment.
 
 This is my pytorch implementation of the [FusionNet: Fusing via Fully-aware Attention with Application to Machine Comprehension](https://openreview.net/pdf?id=BJIgi_eCZ) for chinese machine comprehension dataset (not public dataset). However, I am now implementing the preprocessing/decoding for SQuAD, I think the SQuAD compatiable version will be released soon.
 
