@@ -3,7 +3,7 @@ import spacy
 import os
 from tqdm import tqdm
 import jieba
-from FusionNet import tokenizers
+import tokenizers
 from functools import partial
 from multiprocessing import Pool
 from multiprocessing.util import Finalize
