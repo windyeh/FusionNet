@@ -119,6 +119,8 @@ class DataEngine(Dataset):
 if __name__ == '__main__':
     # train = load_data('train.json')
     # test = load_data('test.json')
-    train = load_data('train_squad.json')
-    test = load_data('dev_squad.json')
+    # train = load_data('train_squad.json')
+    # test = load_data('dev_squad.json')
+    train = load_data('squad/train-v1.1.json')
+    test = load_data('squad/dev-v1.1.json')
     print(len(train), len(test))
