@@ -39,8 +39,8 @@ if __name__ == '__main__':
     # test = data.load_data('test.json', args.word_base)
     # train = data.load_data('train_squad.json', args.word_base)
     # test = data.load_data('dev_squad.json', args.word_base)
-    train = data.load_data('squad/train-v1.1.json', args.word_base)
-    test = data.load_data('squad/dev-v1.1.json', args.word_base)
+    train = data.load_data('FusionNet/squad/train-v1.1.json', args.word_base)
+    test = data.load_data('FusionNet/squad/dev-v1.1.json', args.word_base)
     vocabulary, pad_lens = data.build_vocab(train, test, args.vocab_size)
     print('Vocab size: %d | Max context: %d | Max question: %d'%(
           len(vocabulary), pad_lens[0], pad_lens[1]))
