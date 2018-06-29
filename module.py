@@ -164,7 +164,8 @@ class PointerNet(nn.Module):
         q_dim = question.size(2)
 
         q_flat = question.contiguous().view(-1, q_dim)
-        scores = self.fc_q(question.view(-1, q_dim))
+        #scores = self.fc_q(question.view(-1, q_dim))
+        scores = self.fc_q(question.contiguous().view(-1, q_dim))
         #scores.data.masked_fill_(x_mask.data, -float('inf'))
         beta = F.softmax(scores.view(batch, q_len), -1)
         u_q = weighted_avg(question, beta)
