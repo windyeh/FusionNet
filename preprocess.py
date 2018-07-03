@@ -142,7 +142,7 @@ def preprocess_squad(file_name, output_name, skip_answer=False):
 
 if __name__ == '__main__':
     preprocess_ch('/content/DRCD/DRCD_training.json', 'train.json')
-    preprocess_ch('/content/DRCD/DRCD_dev.json', 'test.json', True)
+    preprocess_ch('/content/DRCD/DRCD_test.json', 'test.json', True)
     # preprocess_ch('DRCD_training.json', 'train.json')
     # preprocess_ch('DRCD_dev.json', 'test.json', True)
     #preprocess_squad('FusionNet/squad/train-v1.1.json', 'train_squad.json')
